@@ -1,7 +1,7 @@
 ### ===================================================
 ### macro data: { namespace: <string>, path: <string> }
 ### ===================================================
-### This function will rotate a specified list in data
+### This function will 'spin' a specified list in data
 ### storage such that a random element is at index 0.
 ### ===================================================
 
@@ -18,6 +18,6 @@ execute store result storage minecraft:math random.max int 1 run scoreboard play
 function math:random with storage minecraft:math random
 
 #store target list
-$data modify storage minecraft:math rotate.list set from storage $(namespace) $(path)
+$data modify storage minecraft:math spin.list set from storage $(namespace) $(path)
 
-function math:rotate/iterate
+function math:spin/iterate
