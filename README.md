@@ -48,4 +48,6 @@ Select a random item from a list with the following commands.
     
     /function math:spin/start with storage minecraft:example math.spin
     
+The selected item from the list is left at index 0 of Math's copy list and can be accessed with the following command.
+
     /data get storage minecraft:math spin.list[0]
